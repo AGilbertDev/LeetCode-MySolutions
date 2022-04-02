@@ -18,7 +18,7 @@ class Solution {
 
             else { // If it's a closing parentese, looks for the last item on the stack.
                 
-                if (stack.size() == 0) {
+                if (stack.size() == 0) { // hecks if the opening bracket was met.
                     return false;
                 }
 
@@ -48,7 +48,7 @@ class Solution {
             }
         }
         
-        if (stack.size() != 0) {
+        if (stack.size() != 0) { // Looks for unclosed parenteses.
             return false;
         }
 
