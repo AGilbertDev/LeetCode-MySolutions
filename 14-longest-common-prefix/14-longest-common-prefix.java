@@ -28,7 +28,7 @@ class Solution {
                     
                 for (int j = 0; j < shortestLength; j++) { // Only compare the characters that match the length.
                     if(prefix.charAt(j) != strs[i].charAt(j)) {
-                        prefix = prefix.substring(0, j); // Eliminates last chars from the prefix.
+                        prefix = prefix.substring(0, j); // Eliminates last chars from prefix starting at unmatching char.
                         break;
                     }   
                 }
