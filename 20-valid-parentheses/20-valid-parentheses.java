@@ -12,7 +12,7 @@ class Solution {
         for (int i = 0; i < s.length(); i++) { // Reads each character from the string.
             char c = s.charAt(i);              // Current character.
 
-            if (c == '(' || c == '[' || c == '{') { // Looks if it's an opening parenthese and adds it on the stack.
+            if (c == '(' || c == '[' || c == '{') { // Checks if it's an opening parenthese and adds it on the stack.
                 stack.push(c);
             }
 
