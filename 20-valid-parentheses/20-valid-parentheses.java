@@ -22,7 +22,7 @@ class Solution {
                     return false;
                 }
 
-                switch (c) { /* If the last opening parenthese matches the one that closes, removes it from the top of                                    the stack. And if not, the order is incorrect and the program stops. */
+                switch (c) { /* If the last opening parenthese matches the one that closes, removes it from the top of                                   the stack. And if not, the order is incorrect and the program stops. */
                     case ')':
                         if (stack.lastElement() == '(') {
                             stack.pop();
